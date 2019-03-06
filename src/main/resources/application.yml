@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path: /webapp
+  port: 8080
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  application:
+    name: ssdemo
+  datasource:
+    url: jdbc:mysql://localhost:3306/testDB
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath*:mapper/**/*.xml
+  type-aliases-package: com.proaim.ssdemo.entity
+
+jdbc:
+  type: mysql
